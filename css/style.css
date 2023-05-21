@@ -115,6 +115,11 @@ html{
     margin-left: 40rem;
 }
 
+#fotoPerfil{
+    width: 300px;
+    border-radius: 50%;
+}
+
 /* Modal */
 
 .modal{
@@ -139,17 +144,19 @@ html{
 
 .contenedor{
     width: 400px;
-    height: 300px;
-    margin: auto;
-    background-color: white;
+    height: 600px;
+    margin-top: 20%;
+    background-color: var(--body-color);
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
     transition: all 500ms ease;
     position: relative;
     transform: translateY(-30%);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 .contenedor header{
-    padding: 10px;
+    padding: 20px;
     background-color: var(--buttons-color);
     color: var(--text-header-color);
 }
@@ -159,7 +166,7 @@ html{
     top: 10px;
     right: 10px;
     color: var(--teatle-color);
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
 }
 
@@ -178,6 +185,22 @@ html{
 
 #btn-model{
     display: none;
+}
+
+.contenido{
+    font-size: 2rem;
+    color: var(--text-color);
+    padding: 10px;
+    text-align: center;
+}
+
+/* div de redes */
+
+.redes{
+    margin-top: 40px;
+    margin-left: 20px;
+    justify-content: center;
+    padding: 10px;
 }
 
 /* modal 2 */
@@ -206,11 +229,13 @@ html{
     width: 400px;
     height: 300px;
     margin: auto;
-    background-color: white;
+    background-color: var(--body-color);
     box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
     transition: all 500ms ease;
     position: relative;
     transform: translateY(-30%);
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 .contenedor2 header{
@@ -307,32 +332,6 @@ html{
     color: var(--teatle-color);
     margin-bottom: 5rem;
 }
-
-/* Efecto de lluvia */
-/* body{
-    background-color: #000;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-}
-
-i{
-    position: absolute;
-    height: 200px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    animation: animate 5s linear infinite;
-}
-
-i:nth-child(3n+1){
-    background: linear-gradient(transparent, #0ff);
-}
-i:nth-child(3n+2){
-    background: linear-gradient(transparent, #0f0);
-}
-i:nth-child(3n+3){
-    background: linear-gradient(transparent, #f00);
-} */
 
 @keyframes animate{
     0%{
