@@ -122,7 +122,7 @@ html{
 
 /* Modal */
 
-.modal{
+.modal, .modal2{
     width: 100%;
     height: 100%;
     display: flex;
@@ -137,12 +137,14 @@ html{
     visibility: hidden;
 }
 
-#btn-model:checked ~ .modal{
+#btn-model:checked ~ .modal,
+#btn-model2:checked ~ .modal2{
     opacity: 1;
     visibility: visible;
 }
 
-.contenedor{
+.contenedor,
+.contenedor2{
     width: 400px;
     height: 600px;
     margin-top: 20%;
@@ -155,13 +157,15 @@ html{
     border-bottom-right-radius: 5%;
 }
 
-.contenedor header{
+.contenedor header,
+.contenedor2 header{
     padding: 20px;
     background-color: var(--buttons-color);
     color: var(--text-header-color);
 }
 
-.contenedor label{
+.contenedor label,
+.contenedor2 label{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -170,7 +174,8 @@ html{
     cursor: pointer;
 }
 
-.lbl-modal{
+.lbl-modal,
+.lbl-modal2{
     border: solid 5px var(--hover-buttons-color);
     font-size: 3rem;
     color: var(--text-color);
@@ -183,7 +188,8 @@ html{
     text-align: center;
 }
 
-#btn-model{
+#btn-model,
+#btn-model2{
     display: none;
 }
 
@@ -203,71 +209,20 @@ html{
     padding: 10px;
 }
 
-/* modal 2 */
+/* div de lenguajes */
 
-.modal2{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: all 500ms ease;
-    opacity: 0;
-    visibility: hidden;
+#titulo_Skills{
+    margin-top: 50px;
 }
 
-#btn-model2:checked ~ .modal2{
-    opacity: 1;
-    visibility: visible;
+.lenguajes,
+.lenguajes2{
+    margin-top: 40px;
+    justify-content: space-between;
 }
 
-.contenedor2{
-    width: 400px;
-    height: 300px;
-    margin: auto;
-    background-color: var(--body-color);
-    box-shadow: 1px 7px 25px rgba(0, 0, 0, 0.6);
-    transition: all 500ms ease;
-    position: relative;
-    transform: translateY(-30%);
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-}
-
-.contenedor2 header{
-    padding: 10px;
-    background-color: var(--buttons-color);
-    color: var(--text-header-color);
-}
-
-.contenedor2 label{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: var(--teatle-color);
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.lbl-modal2{
-    border: solid 5px var(--hover-buttons-color);
-    font-size: 3rem;
-    color: var(--text-color);
-    border-radius: 2rem;
-    position: relative;
-    padding: 10px 30px 10px 30px;
-    text-decoration: none;
-    letter-spacing: 10px;
-    cursor: pointer;
-    text-align: center;
-}
-
-#btn-model2{
-    display: none;
+#titulo_Skills2{
+    margin-top: 40px;
 }
 
 /* sobre mi */
@@ -304,8 +259,8 @@ html{
 }
 
 
-/* carrusel */
-.carrusel{
+/* proyectos */
+.Proyectos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -313,7 +268,7 @@ html{
     margin-bottom: 10rem;
 }
 
-.carruselImagenes{
+.Imagenes{
     height: 20rem;
     gap: 1rem;
     width: 90%;
@@ -322,7 +277,7 @@ html{
     align-items: center;
 }
 
-.carruselImagenes img{
+.Imagenes img{
     width: 40rem;
     margin-top: 2rem;
 }
@@ -331,15 +286,6 @@ html{
     font-size: 60px;
     color: var(--teatle-color);
     margin-bottom: 5rem;
-}
-
-@keyframes animate{
-    0%{
-        transform: translateY(-200px);
-    }
-    100%{
-        transform: translateY(calc(100vh + 200px));
-    }
 }
 
 @media(max-width:1400px){
@@ -366,18 +312,5 @@ html{
     .logo,
     .navbar{
         text-align: center;
-    }
-}
-
-@media(max-height:800px){
-    #rectangular{
-        height: 60px;
-        font-size: 2rem;
-        padding: 3px 30px 5px 30px;
-    }
-    #circle{
-        height: 60px;
-        margin-top: 10px;
-        margin-bottom: 20px;
     }
 }
