@@ -319,5 +319,12 @@ html{
     .contenedor,
     .contenedor2{
         width: 90%;
+    }
 }
+
+@media(max-width: 380px){
+    .header{
+        width: 90%;
+        left: 0;
+    }
 }
