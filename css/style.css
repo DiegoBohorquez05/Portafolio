@@ -314,3 +314,10 @@ html{
         text-align: center;
     }
 }
+
+@media(max-width:430px){
+    .contenedor,
+    .contenedor2{
+        width: 90%;
+}
+}
